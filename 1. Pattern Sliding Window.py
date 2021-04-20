@@ -4,15 +4,12 @@
 
 '''
 1. Maximum Sum Subarray of Size K
-
 Problem Statement #  
 Given an array of positive numbers and a positive number ‘k’, find the maximum sum of any contiguous subarray of size ‘k’.  
-
 Example 1:  
 Input: [2, 1, 5, 1, 3, 2], k=3   
 Output: 9  
 Explanation: Subarray with maximum sum is [5, 1, 3].  
-
 Example 2:  
 Input: [2, 3, 4, 1, 5], k=2   
 Output: 7  
@@ -30,20 +27,16 @@ def max_sub_array_of_size_k(nums, k):
 
 '''
 2. Smallest Subarray with a given sum
-
 Problem Statement #  
 Given an array of positive numbers and a positive number ‘S’, find the length of the smallest contiguous subarray whose sum is greater than or equal to ‘S’. Return 0, if no such subarray exists.  
-
 Example 1:  
 Input: [2, 1, 5, 2, 3, 2], S=7   
 Output: 2  
 Explanation: The smallest subarray with a sum great than or equal to '7' is [5, 2].  
-
 Example 2:  
 Input: [2, 1, 5, 2, 8], S=7   
 Output: 1  
 Explanation: The smallest subarray with a sum greater than or equal to '7' is [8].  
-
 Example 3:  
 Input: [3, 4, 1, 1, 6], S=8   
 Output: 3  
@@ -67,20 +60,16 @@ def smallest_subarray_with_given_sum(nums,S):
 
 '''
 3. Longest Substring with K Distinct Characters  
-
 Problem Statement #  
 Given a string, find the length of the longest substring in it with no more than K distinct characters.  
-
 Example 1:  
 Input: String="araaci", K=2  
 Output: 4    
 Explanation: The longest substring with no more than '2' distinct characters is "araa".  
-
 Example 2:  
 Input: String="araaci", K=1  
 Output: 2  
 Explanation: The longest substring with no more than '1' distinct characters is "aa".  
-
 Example 3:  
 Input: String="cbbebi", K=3  
 Output: 5  
@@ -106,17 +95,14 @@ def longest_substring_with_k_distinct(s, k):
 
 '''
 4. Fruits into Baskets  
-
 Problem Statement #  
 Given an array of characters where each character represents a fruit tree, you are given two baskets and your goal is to put maximum number of fruits in each basket. The only restriction is that each basket can have only one type of fruit.  
 You can start with any tree, but once you have started you can’t skip a tree. You will pick one fruit from each tree until you cannot, i.e., you will stop when you have to pick from a third fruit type.  
 Write a function to return the maximum number of fruits in both the baskets.  
-
 Example 1:  
 Input: Fruit=['A', 'B', 'C', 'A', 'C']  
 Output: 3  
 Explanation: We can put 2 'C' in one basket and one 'A' in the other from the subarray ['C', 'A', 'C']  
-
 Example 2:  
 Input: Fruit=['A', 'B', 'C', 'B', 'B', 'C']  
 Output: 5  
@@ -143,20 +129,16 @@ def fruits_into_baskets(Fruit):
 
 '''
 5. No-repeat Substring  
-
 Problem Statement #  
 Given a string, find the length of the longest substring which has no repeating characters.  
-
 Example 1:  
 Input: String="aabccbb"  
 Output: 3  
 Explanation: The longest substring without any repeating characters is "abc".  
-
 Example 2:  
 Input: String="abbbb"  
 Output: 2  
 Explanation: The longest substring without any repeating characters is "ab".  
-
 Example 3:  
 Input: String="abccde"  
 Output: 3  
@@ -191,20 +173,16 @@ def non_repeat_substring2(s):
 
 '''
 6. Longest Substring with Same Letters after Replacement
-
 Problem Statement #  
 Given a string with lowercase letters only, if you are allowed to replace no more than ‘k’ letters with any letter, find the length of the longest substring having the same letters after replacement.  
-
 Example 1:  
 Input: String="aabccbb", k=2  
 Output: 5  
 Explanation: Replace the two 'c' with 'b' to have a longest repeating substring "bbbbb".  
-
 Example 2:  
 Input: String="abbcb", k=1  
 Output: 4  
 Explanation: Replace the 'c' with 'b' to have a longest repeating substring "bbbb".  
-
 Example 3:  
 Input: String="abccde", k=1  
 Output: 3  
@@ -230,15 +208,12 @@ def length_of_longest_substring(s, k):
 
 '''
 7. Longest Subarray with Ones after Replacement 
-
 Problem Statement #  
 Given an array containing 0s and 1s, if you are allowed to replace no more than ‘k’ 0s with 1s, find the length of the longest contiguous subarray having all 1s.  
-
 Example 1:  
 Input: Array=[0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1], k=2  
 Output: 6  
 Explanation: Replace the '0' at index 5 and 8 to have the longest contiguous subarray of 1s having length 6.  
-
 Example 2:   
 Input: Array=[0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1], k=3  
 Output: 9  
@@ -261,37 +236,33 @@ def length_of_longest_substring(nums, k):
 
 '''
 8. Problem Challenge 1 *Permutation in a String
-
 Problem Challenge 1 #  
 Permutation in a String (hard)   
 Given a string and a pattern, find out if the string contains any permutation of the pattern.  
 Permutation is defined as the re-arranging of the characters of the string. For example, “abc” has the following six permutations:  
 abc, acb, bac, bca, cab, cba  
 If a string has ‘n’ distinct characters it will have n!n! permutations.  
-
 Example 1:  
 Input: String="oidbcaf", Pattern="abc"  
 Output: true  
 Explanation: The string contains "bca" which is a permutation of the given pattern.  
-
 Example 2:  
 Input: String="odicf", Pattern="dc"  
 Output: false  
 Explanation: No permutation of the pattern is present in the given string as a substring.  
-
 Example 3:  
 Input: String="bcdxabcdy", Pattern="bcdyabcdx"  
 Output: true  
 Explanation: Both the string and the pattern are a permutation of each other.  
-
 Example 4:  
 Input: String="aaacb", Pattern="abc"  
 Output: true  
 Explanation: The string contains "acb" which is a permutation of the given pattern.  
-
 '''
 # leetcode #567
 def find_permutation(string, pattern):
+    if len(pattern) > len(string):
+        return False
     dic = {}  # records the pattern
     for letter in pattern:
         if letter not in dic:
@@ -301,23 +272,46 @@ def find_permutation(string, pattern):
     for i in range(k):
         if string[i] in dic:
             dic[string[i]] -= 1
-    for l in range(len(string)-k):
-        if string[l+k] in dic:
-            dic[string[l+k]] -= 1
+    flag = 1
+    for d in dic.values():
+        if d != 0:
+            flag = 0
+    if flag == 1:
+        return True
+    for l in range(len(string) - k):
+        if string[l + k] in dic:
+            dic[string[l + k]] -= 1
         if string[l] in dic:
             dic[string[l]] += 1
         flag = 1
         for d in dic.values():
-            if d == 0:
-                continue
-            else:
+            if d != 0:
                 flag = 0
         if flag == 1:
             return True
     return False
 
 
+'''
+9. # Problem Challenge 2 *String Anagrams
+Problem Challenge 2 
+String Anagrams (hard) 
+Given a string and a pattern, find all anagrams of the pattern in the given string.
+Anagram is actually a Permutation of a string. For example, “abc” has the following six anagrams:
+abc，acb，bac，bca，cab，cba
+Write a function to return a list of starting indices of the anagrams of the pattern in the given string.
+Example 1:
+Input: String="ppqp", Pattern="pq"
+Output: [1, 2]
+Explanation: The two anagrams of the pattern in the given string are "pq" and "qp".
+Example 2:
+Input: String="abbcabc", Pattern="abc"
+Output: [2, 3, 4]
+Explanation: The three anagrams of the pattern in the given string are "bca", "cab", and "abc".
+'''
+
+# def find_string_anagrams(str, pattern):
+
+
 if __name__ == '__main__':
     print(find_permutation("aaacb", "abc"))
-
-
